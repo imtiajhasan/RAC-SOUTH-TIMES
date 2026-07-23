@@ -1,0 +1,263 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Login | RAC SOUTH TIMES</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+background:linear-gradient(135deg,#005DAA,#003A70);
+
+}
+
+.login-box{
+
+width:420px;
+
+background:white;
+
+padding:45px;
+
+border-radius:20px;
+
+box-shadow:0 20px 50px rgba(0,0,0,.25);
+
+}
+
+.logo{
+
+text-align:center;
+
+margin-bottom:30px;
+
+}
+
+.logo img{
+
+width:90px;
+
+margin-bottom:15px;
+
+}
+
+.logo h2{
+
+color:#005DAA;
+
+}
+
+.logo p{
+
+color:#777;
+
+font-size:14px;
+
+}
+
+.input-group{
+
+margin-bottom:20px;
+
+position:relative;
+
+}
+
+.input-group input{
+
+width:100%;
+
+padding:15px 50px 15px 15px;
+
+border:1px solid #ddd;
+
+border-radius:10px;
+
+font-size:15px;
+
+}
+
+.input-group i{
+
+position:absolute;
+
+right:18px;
+
+top:18px;
+
+color:#999;
+
+}
+
+.options{
+
+display:flex;
+
+justify-content:space-between;
+
+margin-bottom:25px;
+
+font-size:14px;
+
+}
+
+.options a{
+
+text-decoration:none;
+
+color:#005DAA;
+
+}
+
+button{
+
+width:100%;
+
+padding:15px;
+
+border:none;
+
+border-radius:10px;
+
+background:#005DAA;
+
+color:white;
+
+font-size:16px;
+
+font-weight:600;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+button:hover{
+
+background:#F7A81B;
+
+color:#111;
+
+}
+
+.footer{
+
+margin-top:25px;
+
+text-align:center;
+
+font-size:14px;
+
+color:#777;
+
+}
+
+.footer a{
+
+text-decoration:none;
+
+color:#005DAA;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="login-box">
+
+<div class="logo">
+
+<img src="images/logo.png" alt="Logo">
+
+<h2>RAC SOUTH TIMES</h2>
+
+<p>Administrator Login</p>
+
+</div>
+
+<form action="dashboard.html" method="GET">
+
+<div class="input-group">
+
+<input
+type="email"
+placeholder="Email Address"
+required>
+
+<i class="fa fa-envelope"></i>
+
+</div>
+
+<div class="input-group">
+
+<input
+type="password"
+placeholder="Password"
+required>
+
+<i class="fa fa-lock"></i>
+
+</div>
+
+<div class="options">
+
+<label>
+
+<input type="checkbox">
+
+ Remember Me
+
+</label>
+
+<a href="#">Forgot Password?</a>
+
+</div>
+
+<button type="submit">
+
+<i class="fa fa-right-to-bracket"></i>
+
+ Login
+
+</button>
+
+</form>
+
+<div class="footer">
+
+Back to <a href="index.html">Home</a>
+
+</div>
+
+</div>
+
+</body>
+</html>
+```

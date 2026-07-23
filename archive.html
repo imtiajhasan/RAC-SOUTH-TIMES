@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Magazine Archive | RAC SOUTH TIMES</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<style>
+
+body{
+    background:#f5f7fb;
+}
+
+.archive-header{
+    background:linear-gradient(135deg,#005DAA,#003B70);
+    color:#fff;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.archive-header h1{
+    font-size:52px;
+}
+
+.archive-header p{
+    margin-top:15px;
+    font-size:18px;
+}
+
+.archive-search{
+    max-width:600px;
+    margin:50px auto;
+    display:flex;
+    gap:15px;
+}
+
+.archive-search input{
+    flex:1;
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+}
+
+.archive-search button{
+    padding:15px 30px;
+    border:none;
+    background:#005DAA;
+    color:#fff;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.archive-search button:hover{
+    background:#F7A81B;
+    color:#111;
+}
+
+.archive-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+padding:40px 8%;
+
+}
+
+.issue-card{
+
+background:#fff;
+
+border-radius:18px;
+
+overflow:hidden;
+
+box-shadow:0 15px 30px rgba(0,0,0,.1);
+
+transition:.3s;
+
+}
+
+.issue-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.issue-card img{
+
+width:100%;
+
+height:380px;
+
+object-fit:cover;
+
+}
+
+.issue-info{
+
+padding:25px;
+
+}
+
+.issue-info h3{
+
+color:#005DAA;
+
+margin-bottom:10px;
+
+}
+
+.issue-info p{
+
+margin-bottom:8px;
+
+color:#666;
+
+}
+
+.buttons{
+
+display:flex;
+
+gap:10px;
+
+margin-top:20px;
+
+}
+
+.buttons a{
+
+flex:1;
+
+text-align:center;
+
+padding:12px;
+
+border-radius:8px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+}
+
+.read{
+
+background:#005DAA;
+
+color:#fff;
+
+}
+
+.download{
+
+background:#F7A81B;
+
+color:#111;
+
+}
+
+footer{
+
+background:#081F42;
+
+color:#fff;
+
+padding:30px;
+
+text-align:center;
+
+margin-top:60px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="archive-header">
+
+<h1>Magazine Archive</h1>
+
+<p>
+
+Browse all previous editions of
+
+<strong>RAC SOUTH TIMES</strong>
+
+</p>
+
+</section>
+
+<div class="archive-search">
+
+<input
+
+type="text"
+
+placeholder="Search by Issue or Year...">
+
+<button>
+
+<i class="fas fa-search"></i>
+
+Search
+
+</button>
+
+</div>
+
+<section class="archive-grid">
+
+<div class="issue-card">
+
+<img src="images/issue1.jpg">
+
+<div class="issue-info">
+
+<h3>Volume 01 • Issue 01</h3>
+
+<p>Published : July 2026</p>
+
+<p>Theme : Leadership & Service</p>
+
+<div class="buttons">
+
+<a href="current-issue.html" class="read">
+
+Read
+
+</a>
+
+<a
+
+href="magazines/issue1.pdf"
+
+class="download"
+
+download>
+
+PDF
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="issue-card">
+
+<img src="images/issue2.jpg">
+
+<div class="issue-info">
+
+<h3>Volume 01 • Issue 02</h3>
+
+<p>Published : August 2026</p>
+
+<p>Theme : Fellowship</p>
+
+<div class="buttons">
+
+<a href="#" class="read">
+
+Read
+
+</a>
+
+<a href="#" class="download">
+
+PDF
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="issue-card">
+
+<img src="images/issue3.jpg">
+
+<div class="issue-info">
+
+<h3>Volume 01 • Issue 03</h3>
+
+<p>Published : September 2026</p>
+
+<p>Theme : Community</p>
+
+<div class="buttons">
+
+<a href="#" class="read">
+
+Read
+
+</a>
+
+<a href="#" class="download">
+
+PDF
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="issue-card">
+
+<img src="images/issue4.jpg">
+
+<div class="issue-info">
+
+<h3>Volume 01 • Issue 04</h3>
+
+<p>Published : October 2026</p>
+
+<p>Theme : Rotary Family</p>
+
+<div class="buttons">
+
+<a href="#" class="read">
+
+Read
+
+</a>
+
+<a href="#" class="download">
+
+PDF
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 RAC SOUTH TIMES
+
+Official Digital Magazine
+
+Rotaract Club of Cumilla South
+
+</p>
+
+</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,358 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Events | RAC SOUTH TIMES</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+
+<style>
+
+body{
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background:#f5f7fb;
+}
+
+/* Hero */
+
+.hero{
+    background:linear-gradient(135deg,#005DAA,#003A70);
+    color:#fff;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero h1{
+    font-size:52px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+/* Container */
+
+.container{
+    width:90%;
+    max-width:1300px;
+    margin:60px auto;
+}
+
+/* Section Title */
+
+.section-title{
+    text-align:center;
+    color:#005DAA;
+    margin-bottom:40px;
+    font-size:36px;
+}
+
+/* Event Cards */
+
+.event-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.event-card{
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.event-card:hover{
+    transform:translateY(-8px);
+}
+
+.event-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.event-content{
+    padding:25px;
+}
+
+.badge{
+    display:inline-block;
+    background:#F7A81B;
+    color:#111;
+    padding:6px 14px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:bold;
+}
+
+.event-content h3{
+    margin:18px 0 12px;
+    color:#005DAA;
+}
+
+.event-content p{
+    color:#666;
+    line-height:1.7;
+}
+
+.info{
+    margin-top:20px;
+    color:#777;
+}
+
+.info p{
+    margin:8px 0;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:#005DAA;
+    color:#fff;
+    text-decoration:none;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#F7A81B;
+    color:#111;
+}
+
+/* Timeline */
+
+.timeline{
+    margin-top:80px;
+}
+
+.timeline-item{
+    position:relative;
+    padding-left:40px;
+    margin-bottom:35px;
+    border-left:3px solid #005DAA;
+}
+
+.timeline-item::before{
+    content:"";
+    position:absolute;
+    left:-10px;
+    top:0;
+    width:18px;
+    height:18px;
+    border-radius:50%;
+    background:#F7A81B;
+}
+
+.timeline-item h4{
+    color:#005DAA;
+    margin-bottom:8px;
+}
+
+.timeline-item span{
+    color:#888;
+    font-size:14px;
+}
+
+.timeline-item p{
+    color:#666;
+}
+
+/* Footer */
+
+footer{
+    margin-top:80px;
+    background:#081F42;
+    color:#fff;
+    text-align:center;
+    padding:35px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:38px;
+}
+
+.section-title{
+    font-size:30px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="hero">
+
+<h1>Club Events</h1>
+
+<p>
+Upcoming Programs, Projects & Fellowship Activities
+</p>
+
+</section>
+
+<div class="container">
+
+<h2 class="section-title">
+Upcoming Events
+</h2>
+
+<div class="event-grid">
+
+<div class="event-card">
+
+<img src="images/event1.jpg" alt="">
+
+<div class="event-content">
+
+<span class="badge">Upcoming</span>
+
+<h3>Tree Plantation Campaign</h3>
+
+<p>
+Join our environmental service initiative by planting trees across the community.
+</p>
+
+<div class="info">
+
+<p><i class="fa fa-calendar"></i> 10 August 2026</p>
+
+<p><i class="fa fa-location-dot"></i> Cumilla</p>
+
+<p><i class="fa fa-clock"></i> 9:00 AM</p>
+
+</div>
+
+<a href="#" class="btn">
+Register Now
+</a>
+
+</div>
+
+</div>
+
+<div class="event-card">
+
+<img src="images/event2.jpg" alt="">
+
+<div class="event-content">
+
+<span class="badge">Upcoming</span>
+
+<h3>Leadership Workshop</h3>
+
+<p>
+Interactive leadership development session for Rotaractors.
+</p>
+
+<div class="info">
+
+<p><i class="fa fa-calendar"></i> 18 August 2026</p>
+
+<p><i class="fa fa-location-dot"></i> Club Hall</p>
+
+<p><i class="fa fa-clock"></i> 4:00 PM</p>
+
+</div>
+
+<a href="#" class="btn">
+Register Now
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="timeline">
+
+<h2 class="section-title">
+Past Events
+</h2>
+
+<div class="timeline-item">
+
+<h4>Community Service Project</h4>
+
+<span>22 July 2026</span>
+
+<p>
+Food distribution and volunteer service for underprivileged families.
+</p>
+
+</div>
+
+<div class="timeline-item">
+
+<h4>Club Installation Ceremony</h4>
+
+<span>05 July 2026</span>
+
+<p>
+Official installation of the new executive committee and members.
+</p>
+
+</div>
+
+<div class="timeline-item">
+
+<h4>Blood Donation Campaign</h4>
+
+<span>18 June 2026</span>
+
+<p>
+Successful blood donation drive with community participation.
+</p>
+
+</div>
+
+<div class="timeline-item">
+
+<h4>District Training Assembly</h4>
+
+<span>28 May 2026</span>
+
+<p>
+Leadership and professional development training organized by District 3282.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+<h3>RAC SOUTH TIMES</h3>
+
+<p>
+Official Digital Magazine of<br>
+Rotaract Club of Cumilla South
+</p>
+
+<p>
+© 2026 All Rights Reserved.
+</p>
+
+</footer>
+
+</body>
+</html>
+```

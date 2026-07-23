@@ -1,0 +1,358 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact Us | RAC SOUTH TIMES</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+
+<style>
+
+body{
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background:#f5f7fb;
+}
+
+/* Hero */
+
+.hero{
+    background:linear-gradient(135deg,#005DAA,#003A70);
+    color:#fff;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero h1{
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+/* Layout */
+
+.container{
+    width:90%;
+    max-width:1300px;
+    margin:60px auto;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1.2fr 1fr;
+    gap:40px;
+}
+
+.card{
+    background:#fff;
+    border-radius:18px;
+    padding:35px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+/* Form */
+
+form input,
+form textarea{
+
+    width:100%;
+    padding:15px;
+    margin-bottom:18px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+    box-sizing:border-box;
+
+}
+
+form textarea{
+    height:170px;
+    resize:vertical;
+}
+
+button{
+    background:#005DAA;
+    color:#fff;
+    border:none;
+    padding:15px 35px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+button:hover{
+    background:#F7A81B;
+    color:#111;
+}
+
+/* Info */
+
+.info-item{
+    display:flex;
+    gap:15px;
+    margin-bottom:25px;
+}
+
+.info-item i{
+    font-size:22px;
+    color:#F7A81B;
+    margin-top:5px;
+}
+
+.info-item h3{
+    margin:0 0 5px;
+    color:#005DAA;
+}
+
+.info-item p{
+    margin:0;
+    color:#666;
+}
+
+/* Map */
+
+.map{
+    margin-top:50px;
+}
+
+.map iframe{
+    width:100%;
+    height:420px;
+    border:none;
+    border-radius:18px;
+}
+
+/* Social */
+
+.social{
+    display:flex;
+    gap:15px;
+    margin-top:25px;
+}
+
+.social a{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    background:#005DAA;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.social a:hover{
+    background:#F7A81B;
+    color:#111;
+}
+
+/* FAQ */
+
+.faq{
+    margin-top:60px;
+}
+
+details{
+    background:#fff;
+    margin-bottom:15px;
+    padding:18px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.05);
+}
+
+summary{
+    cursor:pointer;
+    font-weight:600;
+    color:#005DAA;
+}
+
+/* WhatsApp */
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:60px;
+    height:60px;
+    background:#25D366;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:30px;
+    text-decoration:none;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+/* Footer */
+
+footer{
+    background:#081F42;
+    color:#fff;
+    text-align:center;
+    padding:35px;
+    margin-top:70px;
+}
+
+@media(max-width:900px){
+
+.contact-grid{
+    grid-template-columns:1fr;
+}
+
+.hero h1{
+    font-size:38px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="hero">
+<h1>Contact Us</h1>
+<p>We'd love to hear from you.</p>
+</section>
+
+<div class="container">
+
+<div class="contact-grid">
+
+<div class="card">
+
+<h2>Send a Message</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<input type="text" placeholder="Subject">
+
+<textarea placeholder="Write your message..." required></textarea>
+
+<button type="submit">
+Send Message
+</button>
+
+</form>
+
+</div>
+
+<div class="card">
+
+<h2>Contact Information</h2>
+
+<div class="info-item">
+<i class="fas fa-location-dot"></i>
+<div>
+<h3>Address</h3>
+<p>Rotaract Club of Cumilla South<br>Cumilla, Bangladesh</p>
+</div>
+</div>
+
+<div class="info-item">
+<i class="fas fa-phone"></i>
+<div>
+<h3>Phone</h3>
+<p>+880 1858730514</p>
+</div>
+</div>
+
+<div class="info-item">
+<i class="fas fa-envelope"></i>
+<div>
+<h3>Email</h3>
+<p>imtiajhasanifte51@gmail.com</p>
+</div>
+</div>
+
+<div class="social">
+
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+
+<a href="#"><i class="fab fa-instagram"></i></a>
+
+<a href="#"><i class="fab fa-youtube"></i></a>
+
+<a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="map">
+
+<iframe
+src="https://www.google.com/maps/embed?pb="
+loading="lazy">
+</iframe>
+
+</div>
+
+<div class="faq">
+
+<h2>Frequently Asked Questions</h2>
+
+<details>
+<summary>How can I submit an article?</summary>
+<p>You can submit your article through the editorial email or the future online submission portal.</p>
+</details>
+
+<details>
+<summary>How can I join the editorial team?</summary>
+<p>Contact the Chief Editor or Club Secretary during recruitment periods.</p>
+</details>
+
+<details>
+<summary>Can I download magazine issues?</summary>
+<p>Yes. Visit the Current Issue or Archive pages to download PDF editions.</p>
+</details>
+
+</div>
+
+</div>
+
+<a href="https://wa.me/8801XXXXXXXXX"
+class="whatsapp"
+target="_blank">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+<footer>
+
+<h3>RAC SOUTH TIMES</h3>
+
+<p>
+Official Digital Magazine of Rotaract Club of Cumilla South
+</p>
+
+<p>
+© 2026 All Rights Reserved.
+</p>
+
+</footer>
+
+</body>
+</html>
+```

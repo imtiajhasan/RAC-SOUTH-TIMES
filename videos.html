@@ -1,0 +1,323 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Video Gallery | RAC SOUTH TIMES</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+
+<style>
+
+body{
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background:#f5f7fb;
+}
+
+/* Hero */
+
+.hero{
+    background:linear-gradient(135deg,#005DAA,#003C72);
+    color:#fff;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero h1{
+    font-size:52px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+/* Search */
+
+.search-box{
+    width:90%;
+    max-width:700px;
+    margin:40px auto;
+    display:flex;
+}
+
+.search-box input{
+    flex:1;
+    padding:16px;
+    border:none;
+    border-radius:10px 0 0 10px;
+    font-size:16px;
+}
+
+.search-box button{
+    width:70px;
+    border:none;
+    background:#005DAA;
+    color:#fff;
+    border-radius:0 10px 10px 0;
+    cursor:pointer;
+}
+
+/* Filter */
+
+.filters{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-bottom:40px;
+}
+
+.filters button{
+    border:none;
+    padding:12px 22px;
+    border-radius:30px;
+    background:#fff;
+    cursor:pointer;
+    font-weight:600;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.filters button:hover,
+.filters .active{
+    background:#F7A81B;
+}
+
+/* Featured */
+
+.featured{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.featured iframe{
+    width:100%;
+    height:650px;
+    border:none;
+    border-radius:18px;
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+}
+
+/* Grid */
+
+.video-grid{
+    width:90%;
+    max-width:1400px;
+    margin:60px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:30px;
+}
+
+.video-card{
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.video-card:hover{
+    transform:translateY(-8px);
+}
+
+.video-card iframe{
+    width:100%;
+    height:220px;
+    border:none;
+}
+
+.content{
+    padding:20px;
+}
+
+.content h3{
+    color:#005DAA;
+}
+
+.content p{
+    color:#666;
+    line-height:1.7;
+}
+
+.meta{
+    display:flex;
+    justify-content:space-between;
+    margin-top:15px;
+    color:#888;
+    font-size:14px;
+}
+
+footer{
+    background:#081F42;
+    color:#fff;
+    text-align:center;
+    padding:35px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:38px;
+}
+
+.featured iframe{
+    height:250px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="hero">
+
+<h1>Video Gallery</h1>
+
+<p>Watch Meetings • Projects • Fellowship • Events</p>
+
+</section>
+
+<div class="search-box">
+
+<input type="text" placeholder="Search videos...">
+
+<button>
+
+<i class="fa fa-search"></i>
+
+</button>
+
+</div>
+
+<div class="filters">
+
+<button class="active">All</button>
+
+<button>Meetings</button>
+
+<button>Projects</button>
+
+<button>Training</button>
+
+<button>Installation</button>
+
+<button>Interviews</button>
+
+</div>
+
+<section class="featured">
+
+<iframe
+src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+allowfullscreen>
+</iframe>
+
+</section>
+
+<section class="video-grid">
+
+<div class="video-card">
+
+<iframe
+src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+allowfullscreen>
+</iframe>
+
+<div class="content">
+
+<h3>Club Installation Ceremony</h3>
+
+<p>Highlights from the Rotaract Club of Cumilla South installation ceremony.</p>
+
+<div class="meta">
+
+<span><i class="fa fa-calendar"></i> July 2026</span>
+
+<span>12 min</span>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="video-card">
+
+<iframe
+src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+allowfullscreen>
+</iframe>
+
+<div class="content">
+
+<h3>Community Service Project</h3>
+
+<p>Service activities and volunteer participation.</p>
+
+<div class="meta">
+
+<span><i class="fa fa-calendar"></i> June 2026</span>
+
+<span>08 min</span>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="video-card">
+
+<iframe
+src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+allowfullscreen>
+</iframe>
+
+<div class="content">
+
+<h3>Leadership Training</h3>
+
+<p>District 3282 leadership development program.</p>
+
+<div class="meta">
+
+<span><i class="fa fa-calendar"></i> May 2026</span>
+
+<span>15 min</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>RAC SOUTH TIMES</h3>
+
+<p>
+Official Digital Magazine of<br>
+Rotaract Club of Cumilla South
+</p>
+
+<p>
+© 2026 All Rights Reserved.
+</p>
+
+</footer>
+
+</body>
+</html>
+```

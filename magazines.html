@@ -1,0 +1,1658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Magazines Management | RAC SOUTH TIMES</title>
+
+<link rel="stylesheet" href="css/admin.css">
+<link rel="stylesheet" href="css/dashboard.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+<div class="logo">
+
+<img src="../images/logo.png">
+
+<h2>
+RAC SOUTH TIMES
+</h2>
+
+</div>
+
+
+<ul>
+
+
+<li>
+
+<a href="dashboard.html">
+
+<i class="fa fa-home"></i>
+
+Dashboard
+
+</a>
+
+</li>
+
+
+
+<li class="active">
+
+<a href="magazines.html">
+
+<i class="fa fa-book"></i>
+
+Magazines
+
+</a>
+
+</li>
+
+
+
+<li>
+
+<a href="news.html">
+
+<i class="fa fa-newspaper"></i>
+
+News
+
+</a>
+
+</li>
+
+
+
+<li>
+
+<a href="gallery.html">
+
+<i class="fa fa-image"></i>
+
+Gallery
+
+</a>
+
+</li>
+
+
+
+<li>
+
+<a href="videos.html">
+
+<i class="fa fa-video"></i>
+
+Videos
+
+</a>
+
+</li>
+
+
+
+<li>
+
+<a href="events.html">
+
+<i class="fa fa-calendar"></i>
+
+Events
+
+</a>
+
+</li>
+
+
+
+<li>
+
+<a href="editorial-board.html">
+
+<i class="fa fa-users"></i>
+
+Editorial Board
+
+</a>
+
+</li>
+
+
+
+<li>
+
+<a href="messages.html">
+
+<i class="fa fa-envelope"></i>
+
+Messages
+
+</a>
+
+</li>
+
+
+
+<li>
+
+<a href="settings.html">
+
+<i class="fa fa-gear"></i>
+
+Settings
+
+</a>
+
+</li>
+
+
+
+<li>
+
+<a href="../login.html">
+
+<i class="fa fa-right-from-bracket"></i>
+
+Logout
+
+</a>
+
+</li>
+
+
+</ul>
+
+</div>
+
+
+
+<!-- Main Content -->
+
+<div class="main">
+
+
+
+<header>
+
+
+<h1>
+
+Magazine Management
+
+</h1>
+
+
+
+<div class="right">
+
+
+<button id="darkMode">
+
+<i class="fa fa-moon"></i>
+
+</button>
+
+
+
+<img src="../images/admin.jpg">
+
+
+</div>
+
+
+</header>
+
+
+
+<!-- Page Content -->
+
+
+<div class="page-header">
+
+
+<div>
+
+<h2>
+
+All Magazine Issues
+
+</h2>
+
+
+<p>
+
+Manage RAC SOUTH TIMES digital publications
+
+</p>
+
+
+</div>
+
+
+
+<button class="btn"
+onclick="openUploadModal()">
+
+
+<i class="fa fa-plus"></i>
+
+Add New Magazine
+
+
+</button>
+
+
+</div>
+
+
+
+<!-- Search Area -->
+
+
+<div class="search-box">
+
+
+<div class="search">
+
+
+<i class="fa fa-search"></i>
+
+
+<input 
+type="text"
+id="searchMagazine"
+placeholder="Search magazine...">
+
+
+</div>
+
+
+<select>
+
+<option>
+All Years
+</option>
+
+
+<option>
+2026
+</option>
+
+
+<option>
+2025
+</option>
+
+
+<option>
+2024
+</option>
+
+
+</select>
+
+
+</div>
+
+
+
+<!-- Magazine Container -->
+
+
+<div class="magazine-container">
+
+
+<!-- Magazine Cards -->
+
+<div class="magazine-grid">
+
+
+<!-- Magazine 01 -->
+
+<div class="magazine-card">
+
+
+<div class="cover">
+
+<img src="../images/magazine-cover.jpg"
+alt="Magazine Cover">
+
+
+<span class="issue">
+
+Issue #03
+
+</span>
+
+
+</div>
+
+
+
+<div class="magazine-info">
+
+
+<h3>
+
+RAC SOUTH TIMES
+
+</h3>
+
+
+<p>
+
+Volume 01 • July 2026
+
+</p>
+
+
+
+<div class="details">
+
+<span>
+
+<i class="fa fa-calendar"></i>
+
+22 July 2026
+
+</span>
+
+
+<span>
+
+<i class="fa fa-eye"></i>
+
+1,250 Views
+
+</span>
+
+
+</div>
+
+
+
+<div class="actions">
+
+
+<a href="../uploads/magazine01.pdf"
+class="view-btn"
+target="_blank">
+
+<i class="fa fa-file-pdf"></i>
+
+View PDF
+
+</a>
+
+
+
+<a href="edit-magazine.html"
+class="edit-btn">
+
+<i class="fa fa-edit"></i>
+
+Edit
+
+</a>
+
+
+
+<button class="delete-btn"
+onclick="deleteMagazine()">
+
+<i class="fa fa-trash"></i>
+
+Delete
+
+</button>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<!-- Magazine 02 -->
+
+
+<div class="magazine-card">
+
+
+<div class="cover">
+
+<img src="../images/magazine-cover2.jpg"
+alt="Magazine Cover">
+
+
+<span class="issue">
+
+Issue #02
+
+</span>
+
+
+</div>
+
+
+
+<div class="magazine-info">
+
+
+<h3>
+
+RAC SOUTH TIMES
+
+</h3>
+
+
+<p>
+
+Volume 01 • June 2026
+
+</p>
+
+
+
+<div class="details">
+
+
+<span>
+
+<i class="fa fa-calendar"></i>
+
+18 June 2026
+
+</span>
+
+
+<span>
+
+<i class="fa fa-eye"></i>
+
+980 Views
+
+</span>
+
+
+</div>
+
+
+
+<div class="actions">
+
+
+<a href="../uploads/magazine02.pdf"
+class="view-btn"
+target="_blank">
+
+
+<i class="fa fa-file-pdf"></i>
+
+View PDF
+
+
+</a>
+
+
+
+<a href="edit-magazine.html"
+class="edit-btn">
+
+
+<i class="fa fa-edit"></i>
+
+Edit
+
+
+</a>
+
+
+
+<button class="delete-btn"
+onclick="deleteMagazine()">
+
+
+<i class="fa fa-trash"></i>
+
+Delete
+
+
+</button>
+
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<!-- Magazine 03 -->
+
+
+<div class="magazine-card">
+
+
+<div class="cover">
+
+
+<img src="../images/magazine-cover3.jpg"
+alt="Magazine Cover">
+
+
+
+<span class="issue">
+
+Issue #01
+
+</span>
+
+
+</div>
+
+
+
+
+<div class="magazine-info">
+
+
+<h3>
+
+RAC SOUTH TIMES
+
+</h3>
+
+
+<p>
+
+Volume 01 • May 2026
+
+</p>
+
+
+
+<div class="details">
+
+
+<span>
+
+<i class="fa fa-calendar"></i>
+
+20 May 2026
+
+</span>
+
+
+
+<span>
+
+<i class="fa fa-eye"></i>
+
+750 Views
+
+</span>
+
+
+</div>
+
+
+
+<div class="actions">
+
+
+<a href="../uploads/magazine03.pdf"
+class="view-btn"
+target="_blank">
+
+
+<i class="fa fa-file-pdf"></i>
+
+View PDF
+
+
+</a>
+
+
+
+
+<a href="edit-magazine.html"
+class="edit-btn">
+
+
+<i class="fa fa-edit"></i>
+
+Edit
+
+
+</a>
+
+
+
+
+<button class="delete-btn"
+onclick="deleteMagazine()">
+
+
+<i class="fa fa-trash"></i>
+
+Delete
+
+
+</button>
+
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+<!-- Upload Magazine Modal -->
+
+<div id="uploadModal" class="modal">
+
+
+<div class="modal-content">
+
+
+<div class="modal-header">
+
+<h2>
+
+Add New Magazine
+
+</h2>
+
+
+<button onclick="closeUploadModal()">
+
+<i class="fa fa-xmark"></i>
+
+</button>
+
+</div>
+
+
+
+<form id="magazineForm">
+
+
+
+<div class="form-group">
+
+
+<label>
+
+Magazine Title
+
+</label>
+
+
+<input 
+type="text"
+placeholder="Enter magazine title"
+required>
+
+
+</div>
+
+
+
+
+<div class="form-group">
+
+
+<label>
+
+Issue Number
+
+</label>
+
+
+<input 
+type="text"
+placeholder="Example: Issue #04"
+required>
+
+
+</div>
+
+
+
+
+
+<div class="form-row">
+
+
+
+<div class="form-group">
+
+
+<label>
+
+Volume
+
+</label>
+
+
+<input 
+type="text"
+placeholder="Volume 01">
+
+
+</div>
+
+
+
+
+<div class="form-group">
+
+
+<label>
+
+Publish Date
+
+</label>
+
+
+<input 
+type="date">
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="form-group">
+
+
+<label>
+
+Magazine Description
+
+</label>
+
+
+<textarea
+placeholder="Write magazine description">
+
+</textarea>
+
+
+</div>
+
+
+
+
+
+
+<div class="form-row">
+
+
+
+<div class="form-group">
+
+
+<label>
+
+Upload Cover Image
+
+</label>
+
+
+<input 
+type="file"
+accept="image/*">
+
+
+</div>
+
+
+
+
+
+<div class="form-group">
+
+
+<label>
+
+Upload PDF File
+
+</label>
+
+
+<input 
+type="file"
+accept=".pdf">
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+<div class="preview-box">
+
+
+<img id="coverPreview"
+src="../images/default-cover.jpg"
+alt="Cover Preview">
+
+
+</div>
+
+
+
+
+
+
+
+<div class="modal-actions">
+
+
+<button 
+type="button"
+class="cancel-btn"
+onclick="closeUploadModal()">
+
+
+Cancel
+
+
+</button>
+
+
+
+
+
+<button 
+type="submit"
+class="save-btn">
+
+
+<i class="fa fa-upload"></i>
+
+Publish Magazine
+
+
+</button>
+
+
+</div>
+
+
+
+</form>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<!-- Notification -->
+
+<div id="successMessage"
+class="success-message">
+
+
+<i class="fa fa-check-circle"></i>
+
+
+Magazine Added Successfully!
+
+
+</div>
+
+
+
+<!-- Footer -->
+
+
+<footer class="admin-footer">
+
+
+<p>
+
+© 2026 RAC SOUTH TIMES Admin Panel
+
+</p>
+
+
+</footer>
+
+
+
+
+
+<!-- Scripts -->
+
+
+<script src="js/admin.js"></script>
+
+<script src="js/upload.js"></script>
+
+
+
+<script>
+
+
+function openUploadModal(){
+
+document.getElementById(
+"uploadModal"
+).style.display="flex";
+
+}
+
+
+
+function closeUploadModal(){
+
+document.getElementById(
+"uploadModal"
+).style.display="none";
+
+}
+
+
+
+function deleteMagazine(){
+
+let confirmDelete =
+confirm(
+"Are you sure you want to delete this magazine?"
+);
+
+
+if(confirmDelete){
+
+alert(
+"Magazine deleted successfully!"
+);
+
+}
+
+}
+
+
+
+
+
+// Cover Preview
+
+
+const coverInput =
+document.querySelector(
+'input[type="file"]'
+);
+
+
+const preview =
+document.getElementById(
+"coverPreview"
+);
+
+
+
+coverInput?.addEventListener(
+"change",
+function(){
+
+const file=this.files[0];
+
+
+if(file){
+
+preview.src=
+URL.createObjectURL(file);
+
+}
+
+});
+
+
+</script>
+
+</div>
+<style>
+
+/* ==========================
+   Magazine Page Style
+========================== */
+
+
+.page-header{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:35px;
+
+}
+
+
+.page-header h2{
+
+color:#005DAA;
+
+margin-bottom:8px;
+
+}
+
+
+.page-header p{
+
+color:#777;
+
+}
+
+
+
+
+/* Search */
+
+.search-box{
+
+display:flex;
+
+gap:20px;
+
+padding:0 35px 35px;
+
+}
+
+
+.search{
+
+background:#fff;
+
+padding:12px 18px;
+
+border-radius:10px;
+
+display:flex;
+
+align-items:center;
+
+gap:12px;
+
+flex:1;
+
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+
+.search input{
+
+border:none;
+
+outline:none;
+
+width:100%;
+
+font-size:15px;
+
+}
+
+
+
+.search-box select{
+
+padding:12px;
+
+border:none;
+
+border-radius:10px;
+
+}
+
+
+
+
+
+/* Magazine Grid */
+
+
+.magazine-grid{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(auto-fit,minmax(280px,1fr));
+
+gap:25px;
+
+padding:0 35px;
+
+}
+
+
+
+.magazine-card{
+
+background:#fff;
+
+border-radius:18px;
+
+overflow:hidden;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+
+.magazine-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+
+
+.cover{
+
+position:relative;
+
+}
+
+
+
+.cover img{
+
+width:100%;
+
+height:330px;
+
+object-fit:cover;
+
+}
+
+
+
+.issue{
+
+position:absolute;
+
+top:15px;
+
+right:15px;
+
+background:#F7A81B;
+
+padding:7px 15px;
+
+border-radius:20px;
+
+font-weight:600;
+
+}
+
+
+
+
+
+.magazine-info{
+
+padding:25px;
+
+}
+
+
+
+.magazine-info h3{
+
+color:#005DAA;
+
+}
+
+
+
+.details{
+
+display:flex;
+
+justify-content:space-between;
+
+margin:15px 0;
+
+color:#777;
+
+font-size:14px;
+
+}
+
+
+
+
+
+.actions{
+
+display:flex;
+
+gap:8px;
+
+flex-wrap:wrap;
+
+}
+
+
+
+.actions a,
+.actions button{
+
+padding:10px 14px;
+
+border:none;
+
+border-radius:8px;
+
+cursor:pointer;
+
+text-decoration:none;
+
+font-size:13px;
+
+}
+
+
+
+.view-btn{
+
+background:#005DAA;
+
+color:#fff;
+
+}
+
+
+
+.edit-btn{
+
+background:#F7A81B;
+
+color:#111;
+
+}
+
+
+
+.delete-btn{
+
+background:#EF4444;
+
+color:#fff;
+
+}
+
+
+
+
+
+/* Modal */
+
+
+.modal{
+
+display:none;
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+background:rgba(0,0,0,.6);
+
+justify-content:center;
+
+align-items:center;
+
+z-index:9999;
+
+}
+
+
+
+.modal-content{
+
+width:600px;
+
+max-width:90%;
+
+background:#fff;
+
+padding:30px;
+
+border-radius:18px;
+
+}
+
+
+
+.modal-header{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+margin-bottom:25px;
+
+}
+
+
+
+.modal-header h2{
+
+color:#005DAA;
+
+}
+
+
+
+.modal-header button{
+
+border:none;
+
+background:none;
+
+font-size:22px;
+
+cursor:pointer;
+
+}
+
+
+
+.form-group{
+
+margin-bottom:18px;
+
+}
+
+
+
+.form-group label{
+
+display:block;
+
+margin-bottom:8px;
+
+font-weight:600;
+
+}
+
+
+
+.form-group input,
+.form-group textarea{
+
+width:100%;
+
+padding:13px;
+
+border:1px solid #ddd;
+
+border-radius:10px;
+
+}
+
+
+
+.form-group textarea{
+
+height:120px;
+
+}
+
+
+
+.form-row{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:20px;
+
+}
+
+
+
+.preview-box{
+
+text-align:center;
+
+margin:20px;
+
+}
+
+
+
+.preview-box img{
+
+width:150px;
+
+height:200px;
+
+object-fit:cover;
+
+border-radius:10px;
+
+}
+
+
+
+.modal-actions{
+
+display:flex;
+
+justify-content:flex-end;
+
+gap:15px;
+
+}
+
+
+
+.cancel-btn{
+
+background:#6b7280;
+
+color:#fff;
+
+padding:12px 20px;
+
+border:none;
+
+border-radius:8px;
+
+}
+
+
+
+.save-btn{
+
+background:#005DAA;
+
+color:#fff;
+
+padding:12px 20px;
+
+border:none;
+
+border-radius:8px;
+
+}
+
+
+
+
+
+.success-message{
+
+display:none;
+
+position:fixed;
+
+right:30px;
+
+bottom:30px;
+
+background:#22c55e;
+
+color:white;
+
+padding:15px 25px;
+
+border-radius:10px;
+
+}
+
+
+
+/* Responsive */
+
+
+@media(max-width:700px){
+
+
+.page-header,
+.search-box{
+
+flex-direction:column;
+
+}
+
+
+.form-row{
+
+grid-template-columns:1fr;
+
+}
+
+
+}
+
+</style>
+
+
+
+<script>
+
+
+// Search Magazine
+
+
+const searchInput =
+document.getElementById(
+"searchMagazine"
+);
+
+
+
+searchInput?.addEventListener(
+"keyup",
+function(){
+
+let value =
+this.value.toLowerCase();
+
+
+document
+.querySelectorAll(
+".magazine-card"
+)
+.forEach(card=>{
+
+
+let text =
+card.innerText.toLowerCase();
+
+
+card.style.display =
+text.includes(value)
+? "block"
+: "none";
+
+
+});
+
+
+});
+
+
+
+</script>
+
+
+
+</div>
+
+</body>
+
+</html>

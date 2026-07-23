@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>
+Upload Magazine | RAC SOUTH TIMES
+</title>
+
+
+<link rel="stylesheet" href="css/admin.css">
+
+<link rel="stylesheet" href="css/dashboard.css">
+
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+
+
+</head>
+
+
+<body>
+
+
+
+<!-- Sidebar -->
+
+
+<div class="sidebar">
+
+
+<div class="logo">
+
+
+<img src="../images/logo.png">
+
+
+<h2>
+RAC SOUTH TIMES
+</h2>
+
+
+</div>
+
+
+
+<ul>
+
+
+<li>
+
+<a href="dashboard.html">
+
+<i class="fa fa-home"></i>
+
+Dashboard
+
+</a>
+
+</li>
+
+
+
+
+<li class="active">
+
+<a href="magazines.html">
+
+<i class="fa fa-book"></i>
+
+Magazines
+
+</a>
+
+</li>
+
+
+
+<li>
+
+<a href="news.html">
+
+<i class="fa fa-newspaper"></i>
+
+News
+
+</a>
+
+</li>
+
+
+
+<li>
+
+<a href="gallery.html">
+
+<i class="fa fa-image"></i>
+
+Gallery
+
+</a>
+
+</li>
+
+
+
+<li>
+
+<a href="videos.html">
+
+<i class="fa fa-video"></i>
+
+Videos
+
+</a>
+
+</li>
+
+
+
+<li>
+
+<a href="events.html">
+
+<i class="fa fa-calendar"></i>
+
+Events
+
+</a>
+
+</li>
+
+
+
+<li>
+
+<a href="settings.html">
+
+<i class="fa fa-gear"></i>
+
+Settings
+
+</a>
+
+</li>
+
+
+
+<li>
+
+<a href="../login.html">
+
+<i class="fa fa-right-from-bracket"></i>
+
+Logout
+
+</a>
+
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+
+
+<!-- Main -->
+
+
+<div class="main">
+
+
+
+<header>
+
+
+<h1>
+
+Upload Magazine
+
+</h1>
+
+
+<div class="right">
+
+
+<button id="darkMode">
+
+<i class="fa fa-moon"></i>
+
+</button>
+
+
+<img src="../images/admin.jpg">
+
+
+</div>
+
+
+</header>
+
+
+
+
+
+<!-- Upload Container -->
+
+
+<div class="upload-container">
+
+
+<div class="upload-header">
+
+
+<h2>
+
+Add New Magazine Issue
+
+</h2>
+
+
+<p>
+
+Upload your latest RAC SOUTH TIMES publication
+
+</p>
+
+
+</div>
+
+
+
+<form id="uploadMagazineForm">
+
+
+<!-- Publish Settings -->
+
+<div class="form-section">
+
+
+<h3>
+
+<i class="fa fa-sliders"></i>
+
+Publish Settings
+
+</h3>
+
+
+
+<div class="form-row">
+
+
+
+<div class="form-group">
+
+
+<label>
+
+Status
+
+</label>
+
+
+<select name="status">
+
+
+<option value="published">
+
+Published
+
+</option>
+
+
+<option value="draft">
+
+Draft
+
+</option>
+
+
+</select>
+
+
+</div>
+
+
+
+
+<div class="form-group">
+
+
+<label>
+
+Category
+
+</label>
+
+
+<select name="category">
+
+
+<option>
+
+Magazine
+
+</option>
+
+
+<option>
+
+Special Issue
+
+</option>
+
+
+<option>
+
+Annual Publication
+
+</option>
+
+
+</select>
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<!-- Upload Progress -->
+
+
+<div class="progress-section">
+
+
+<h3>
+
+Upload Progress
+
+</h3>
+
+
+
+<div class="progress-bar">
+
+
+<div id="progressFill">
+
+0%
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<!-- Action Buttons -->
+
+
+<div class="upload-actions">
+
+
+<button 
+type="reset"
+class="cancel-btn">
+
+
+<i class="fa fa-xmark"></i>
+
+Cancel
+
+
+</button>
+
+
+
+
+<button 
+type="submit"
+class="save-btn">
+
+
+<i class="fa fa-cloud-arrow-up"></i>
+
+Upload Magazine
+
+
+</button>
+
+
+
+</div>
+
+
+</form>
+
+
+</div>
+
+
+
+
+
+
+<!-- Footer -->
+
+
+<footer class="admin-footer">
+
+
+<p>
+
+© 2026 RAC SOUTH TIMES Admin Panel
+
+</p>
+
+
+</footer>
+
+
+
+
+
+<script src="js/admin.js"></script>
+
+
+<script src="js/upload.js"></script>
+
+
+
+
+<script>
+
+
+// ==========================
+// Cover Image Preview
+// ==========================
+
+
+const coverImage =
+document.getElementById(
+"coverImage"
+);
+
+
+const coverPreview =
+document.getElementById(
+"coverPreview"
+);
+
+
+
+coverImage?.addEventListener(
+"change",
+function(){
+
+
+const file=this.files[0];
+
+
+if(file){
+
+coverPreview.src =
+URL.createObjectURL(file);
+
+}
+
+
+});
+
+
+
+
+
+// ==========================
+// PDF Preview
+// ==========================
+
+
+const pdfFile =
+document.getElementById(
+"pdfFile"
+);
+
+
+const pdfName =
+document.getElementById(
+"pdfName"
+);
+
+
+
+pdfFile?.addEventListener(
+"change",
+function(){
+
+
+if(this.files[0]){
+
+
+pdfName.innerHTML =
+
+`
+<i class="fa fa-file-pdf"></i>
+
+${this.files[0].name}
+
+`;
+
+
+}
+
+
+});
+
+
+
+
+
+// ==========================
+// Drag & Drop PDF
+// ==========================
+
+
+const dropArea =
+document.getElementById(
+"pdfDropArea"
+);
+
+
+
+dropArea?.addEventListener(
+"dragover",
+(e)=>{
+
+e.preventDefault();
+
+dropArea.classList.add(
+"active"
+);
+
+});
+
+
+
+dropArea?.addEventListener(
+"dragleave",
+()=>{
+
+dropArea.classList.remove(
+"active"
+);
+
+});
+
+
+
+dropArea?.addEventListener(
+"drop",
+(e)=>{
+
+
+e.preventDefault();
+
+
+dropArea.classList.remove(
+"active"
+);
+
+
+
+const file =
+e.dataTransfer.files[0];
+
+
+
+if(file && file.type==="application/pdf"){
+
+
+pdfName.innerHTML =
+
+`
+<i class="fa fa-file-pdf"></i>
+
+${file.name}
+
+`;
+
+
+}
+
+
+});
+
+
+
+</script>
+
+
+
+</body>
+
+</html>
+
+</form>
+
+
+
+</div>
+<!-- Magazine Information -->
+
+
+<div class="form-section">
+
+
+<h3>
+
+<i class="fa fa-circle-info"></i>
+
+Magazine Information
+
+</h3>
+
+
+
+<div class="form-row">
+
+
+
+<div class="form-group">
+
+
+<label>
+
+Magazine Title
+
+</label>
+
+
+<input 
+type="text"
+name="title"
+placeholder="Enter magazine name"
+required>
+
+
+</div>
+
+
+
+
+<div class="form-group">
+
+
+<label>
+
+Issue Number
+
+</label>
+
+
+<input 
+type="text"
+name="issue"
+placeholder="Example: Issue #04"
+required>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<div class="form-row">
+
+
+
+<div class="form-group">
+
+
+<label>
+
+Volume
+
+</label>
+
+
+<input 
+type="text"
+name="volume"
+placeholder="Example: Volume 01">
+
+
+</div>
+
+
+
+
+
+<div class="form-group">
+
+
+<label>
+
+Publish Date
+
+</label>
+
+
+<input 
+type="date"
+name="date">
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+<div class="form-group">
+
+
+<label>
+
+Magazine Description
+
+</label>
+
+
+<textarea 
+name="description"
+placeholder="Write magazine description here...">
+
+</textarea>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<!-- Cover Upload -->
+
+
+<div class="form-section">
+
+
+<h3>
+
+<i class="fa fa-image"></i>
+
+Cover Image
+
+</h3>
+
+
+
+<div class="cover-upload-box">
+
+
+
+<input 
+type="file"
+id="coverImage"
+accept="image/*"
+hidden>
+
+
+
+<label for="coverImage"
+class="upload-label">
+
+
+<i class="fa fa-cloud-arrow-up"></i>
+
+
+<span>
+
+Click to Upload Cover
+
+</span>
+
+
+</label>
+
+
+
+
+<div class="image-preview">
+
+
+<img 
+id="coverPreview"
+src="../images/default-cover.jpg">
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<!-- PDF Upload -->
+
+
+<div class="form-section">
+
+
+<h3>
+
+<i class="fa fa-file-pdf"></i>
+
+Magazine PDF
+
+</h3>
+
+
+
+
+<div class="pdf-upload-box"
+id="pdfDropArea">
+
+
+
+<i class="fa fa-file-arrow-up"></i>
+
+
+<h4>
+
+Drag & Drop PDF Here
+
+</h4>
+
+
+<p>
+
+or click to browse file
+
+</p>
+
+
+
+
+<input 
+type="file"
+id="pdfFile"
+accept=".pdf"
+hidden>
+
+
+
+<button 
+type="button"
+onclick="document.getElementById('pdfFile').click()">
+
+Choose PDF
+
+</button>
+
+
+
+<div id="pdfName">
+
+No file selected
+
+</div>
+
+
+
+</div>
+
+
+</div>
